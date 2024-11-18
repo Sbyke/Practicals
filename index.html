@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal portfolio| cord AI</title>
-     <link rel="stylesheet" href="style.css">
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+  <title>My weather application</title>
 </head>
+
 <body>
-    <header class="header"> 
-        <a href="a" class="logo">Thomas!</a>
-        <nav class="navbar">
-            <a href="#" class="Active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </nav>
+  <div class="weather-app">
+    <header>
+      <form id="search-form">
+        <input type="search" placeholder="Enter a city.." required class="search-input" id="search-input" />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
     </header>
-    <section class="home">
-        <div class="home-content">
-            <h1>Hi. I'm Thomas Clay</h1>
-            <h3>CyberSecurity Consultant</h3>
-            <p>Am a tech enthusiat with a degree in Computer Science .A security Consultant by proffesion with 
-                a strong background in programming and kali linux </p>
-                <div class="btn-box">
-                    <a href="#">Hire Me</a>
-                    <a href="#">Let's Talk</a>
-                </div>
+    <main>
+      <div class="current-weather">
+        <div>
+          <h1 class="current-city" id="current-city">Paris</h1>
+          <p class="current-details">
+            <span id="current-date"></span>Tuesday 07:45, moderate rain <br />
+            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+          </p>
         </div>
-        <div class="home-sci">
-            <a href="https://www.instagram.com/yourusername"></a><i class='bx bxl-instagram' ></i></a>
-            <a href="#"><i class='bx bxl-discord'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></box-icon></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            
+        <div class="current-temperature">
+          <span class="current-temperature-icon">☀️</span><span class="current-temperature-value"
+            id="current-temperature">24</span><span class="current-temperature-unit">°C</span>
         </div>
-        <span class="home-imgHover"></span>
-        <div class="moving-photo">
-            <img src="light.jpg">
-        </div>
-        
-    </section>
-   <footer class="footer">
-    <p>&copy;2024CordAI</p>
-</footer>    
+      </div>
+    </main>
+    <footer>
+      <p>
+        This project was coded by
+        <a href="https://github.com/Rennish" target="_blank">Thomas Clay</a> and is
+        <a href="https://github.com/Rennish/Weather-APi-Correct" target="_blank"> on GitHub</a> and
+        <a href="https://beautiful-kitten-9b7d1e.netlify.app/" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
+  </div>
 </body>
+
+
 </html>
